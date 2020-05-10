@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+* {
+    box-sizing: border-box;
+  }
+body{
+    margin: 0;
+    background-color: hsl(180, 52%, 96%);
+    font-size: 15px;
+    font-family: Spartan;
+    position: relative;
+    
+}
+
+header{
+    margin: 0;
+    height: 80px;
+    background-color: hsl(180, 29%, 50%);
+    background-image: url(./images/bg-header-desktop.svg);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    
+}
+footer{
+    color: white;
+    margin: 0;
+    padding: 10px;
+    height: 30px;
+    background-color: hsl(180, 29%, 50%);
+    background-image: url(./images/bg-header-desktop.svg);
+    
+    
+}
+
+#app{
+   
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    padding: 5px;
+    margin-top: 100px;
+    margin-bottom: 110px;
+}
+.card {
+    height: auto;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    border-radius: 5px;
+}
+ 
+.card img{
+    margin-top: 15px;
+    height: auto;
+    margin-left: 30px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    font-family: Spartan;
+    margin-top: 10px;
+  }
+.flex-container:hover{
+    border-left: 5px solid hsl(180, 8%, 52%);
+}
+.flex-item {
+    color: hsl(180, 29%, 50%);
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    height: 100px;
+    
+}
+.flex-item img{
+    padding-left: 2px;
+    margin-top: 5px;
+    height: 75px;
+    margin-left: 25px;
+}
+.stack-container {
+    margin: auto;
+}
+.stack {
+    padding: 5px;
+    margin: 10px;
+    background-color:hsl(180, 8%, 52%);
+    color: white;
+    border-radius: 5%;
+    font-size: 80%;
+}
+.skill{
+    font-weight: bold;
+}
+.stack:hover{
+    color:white;
+    background-color: black;
+}
+.time{
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    padding: 5px;
+    border-radius: 10%;
+    margin-left: 5px;
+}
+
+.tag{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10%;
+    margin-left: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        width: 102%;
+      }
+    .flex-item{
+        position: relative;
+        margin: 0px;
+        padding-left: 15px;
+        
+        
+    }
+    .logo{
+        position: absolute;
+        top: -35%;
+        right: 190px;
+        height: auto;
+        width: auto;
+    
+     
+
+    }
+    .logo-container{
+        height: 70px;
+    }
+    .content-container{
+        height: 150px;
+        
+    }
+    .time {
+        padding: 0px;
+        color: red;
+        font-weight: 700;
+        background-color: white;
+    }
+    .tag{
+        color: green;
+        background-color: white;
+        font-weight: bolder;
+        padding: 0px;
+    }
+    .card{
+        margin-top: 25px;
+    }
+    
+  }

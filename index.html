@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  
+  <title>Frontend Mentor | Job Listings</title>
+</head>
+<body>
+<header>
+</header>
+
+  <div id="app">
+    <div class="card flex-container" v-for="d in data" :key="d.id">
+      <div class="flex-item logo-container">
+        <img :src="d.logo" class="logo">
+      </div>
+      <div class="flex-item content-container">
+        
+          <span class="skill">{{d.company}}.</span>
+          <span class="time" v-if="d.new">New</span>
+          <span class="tag" v-if="d.featured">Featured</span>
+          <h4>{{d.position}}</h4>
+          <span>{{d.postedAt}} .</span>
+          <span>{{d.contract}} .</span>
+          <span>{{d.location}} .</span>
+      </div>
+      <div class="flex-item stack-container">
+        <span class="stack" v-for="skill in d.languages">{{skill}} </span>
+        
+      </div>
+    
+     
+    </div>
+    
+    
+  </div>
+
+ 
+
+
+  <script src="index.js"></script>
+  
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://ug.linkedin.com/in/abdallah-idriss-lutaaya-0231a3193">
+      Abdallah Idriss Lutaaya
+    </a>.
+  </footer>
+</body>
+</html>
